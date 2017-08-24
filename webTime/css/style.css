@@ -1,0 +1,409 @@
+
+/*---------------------------------------------------------------------------------
+
+Table Of Content
+
+	1- Default
+	2- Fonts
+	3- Heading
+	4- Content
+		4.1 - Count Down Timer
+		4.2 - Form
+		4.3 - Form Placeholder
+		4.4 - Form Subscriber
+		4.5 - Social Media List
+		4.6 - Service List
+	5- Footer
+	6- Theme Colors
+
+---------------------------------------------------------------------------------*/
+
+
+/* ==================================================================
+	1// Default
+================================================================== */
+html {
+	height: 100% !important;
+}
+body {
+	position: relative;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #333;
+}
+section {
+	position: relative;
+}
+.page-loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background: #FFF url(../img/page-loader.gif) center center no-repeat;
+}
+header {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+/* ==================================================================
+	2// Fonts
+================================================================== */
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 30px;
+}
+p {
+	font: 14px/1.7em "Open Sans";
+	word-spacing: 3px;
+}
+
+.bl{
+	font-size: 35px;
+}
+
+/* ==================================================================
+	3// Heading
+================================================================== */
+.head{
+	font-size: 32px;
+	font-family: "微软雅黑";
+	color: white;
+}
+
+.head:hover{
+	text-decoration: none;
+}
+
+.site-logo {
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 100%;
+	height: 80px;
+	text-indent: -99999px;
+	font-weight: 600;
+	line-height: 20px;
+	display: block;
+}
+.logo .site-logo {
+	background-image: url(../img/logo.png);
+}
+
+ul.contact-list {
+	float: right;
+	margin-top: 15px;
+}
+ul.contact-list li {
+	padding: 0 0 5px;
+	margin: 0;
+	font: italic 600 18px "Open Sans";
+}
+ul.contact-list li i {
+	margin-right: 10px;
+}
+
+
+/* ==================================================================
+	4// Content
+================================================================== */
+#content {
+	margin: 60px 0 0;
+}
+.content-intro h1 {
+	margin-bottom: 25px;
+	word-spacing: 5px;
+}
+
+	/* ==================================
+		4.1// Count Down Timer
+	===================================== */
+	.countdown-container{
+		text-align: center;
+		-webkit-backface-visibility: hidden;
+	}
+	.countdown-container .dash{
+		display:inline-block;
+		float:left;
+		width:auto;
+		margin: 0px 38px 20px 0px;;
+	}
+	.countdown-container .dash:last-child {
+		margin-right: 0;
+	}
+	.countdown-container .digit{
+		font: 400 80px/1.5em 'Oswald', sans-serif;
+		display: inline-block;
+		height: 115px;
+		width: 115px;
+		overflow: hidden;
+		margin: 0px 0px 0px -2px;
+		padding: 0px;
+		color: #fff;
+		background: rgba(255,255,255,0.07);
+		border: 1px solid rgba(255,255,255,0.2);
+	}
+	.countdown-container .digit:first-child{
+		margin-left: 0px;
+	}
+	.countdown-container .dash_title{
+		width: 100%;
+		display: block;
+		color: #fff;
+		font: 20px "Oswald";
+		font-weight: 400;
+		line-height: 21px;
+		letter-spacing: 1px;
+		margin: -4px 0px 0px 0px;
+		padding: 10px 0px;
+		background: rgba(255,255,255,0.07);
+		border: 1px solid rgba(255,255,255,0.2);
+		border-top: none;
+	}
+
+	/* ==================================
+		4.2// Form
+	===================================== */
+	input, textarea, select {
+		background: rgba(255,255,255,0.07);
+		outline: none;
+		-webkit-appearance: none;
+		color: #fff; font-size:14px;
+		border:  0px;
+		border: 1px solid rgba(255,255,255,0.1);
+		border-left: 1px solid rgba(255,255,255,0.1);
+		padding: 9px 20px;
+		margin: 0px;
+		font-style: normal;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		height: auto;
+		margin-bottom: 20px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-transition: background-color .3s ease, border .3s ease, color .3s ease;
+		-moz-transition: background-color .3s ease, border .3s ease, color .3s ease;
+		-ms-transition: background-color .3s ease, border .3s ease, color .3s ease;
+		-o-transition: background-color .3s ease, border .3s ease, color .3s ease;
+		transition: background-color .3s ease, border .3s ease, color .3s ease;
+		position: relative; 
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		line-height:normal;
+		letter-spacing:normal;
+	}
+	input:focus{
+		background: rgba(255,255,255,0.1);
+	}
+	select:focus{
+		background: rgba(255,255,255,0.1);
+	}
+	textarea:focus {
+		background: rgba(255,255,255,0.1);
+	}
+	input[type="text"], input[type="email"] {
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+		padding: 10px 20px;
+		resize: both;
+		margin-top: 0px;
+		height: 100px;
+	}
+	input[type="submit"], button {
+		width: auto;
+		font-style: normal;
+		background: rgba(255,255,255,0.07);
+		color: #dfdfdf;
+		cursor: pointer;
+		border-left: 1px solid rgba(255,255,255,0.1);
+		border-right: 1px solid rgba(255,255,255,0.1);
+		padding: 13px 25px;
+	}
+	select, option {
+		cursor: pointer;
+	}
+	input[type="checkbox"] {
+		-webkit-appearance: checkbox;
+	}
+	input[type="radio"] {
+		-webkit-appearance: radio;
+	}
+	.form {
+		position: relative;
+		overflow: hidden;
+	}
+	.form-container {
+		padding-top: 40px;
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+
+
+	/* ==================================
+		4.3// Form Placeholder
+	===================================== */
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder { 
+	    color: #dfdfdf;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    color: #dfdfdf;
+	    opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color: #dfdfdf; 
+	    opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color: #dfdfdf;
+	}
+
+	placeholder { 
+	   color: #dfdfdf;
+	}
+	input[placeholder] { text-overflow: ellipsis; }
+
+	::-moz-placeholder { text-overflow: ellipsis; } /* firefox 19+ */
+
+	input:-moz-placeholder { text-overflow: ellipsis; }
+
+	/* ==================================
+		4.4// Form Subscriber
+	===================================== */
+	.subscriptionForm .emailfield{
+		width: 78%;
+		padding: 13px 25px;
+	}
+	/* Success & Error Style For Register Form */
+	.success {
+		padding: 1em;
+		margin: 30px 0 0;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+		color: #fff;;
+		border: 1px solid #d6e9c6;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	.error {
+		padding: 1em;
+		margin: 30px 0 0;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+		color: #ff9797 !important;
+		border: 1px solid rgba(185, 74, 72, 0.3);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+
+	/* ==================================
+		4.5// Social Media List
+	===================================== */
+	ul.social-list {
+		margin-bottom: 40px;
+	}
+	ul.social-list li {
+		display: inline-block;
+	}
+	ul.social-list li i{
+		color: #fff;
+		font-size: 22px;
+		width: 36px;
+		height: 36px;
+		background: rgba(255,255,255,0.07);
+		border: 1px solid rgba(255,255,255,0.1);
+		border-radius: 2px;
+		padding: 7px;
+		transition: all 0.2s ease-in-out;
+		margin-right: 10px;
+	}
+	ul.social-list li i:hover {
+		background: rgba(255,255,255,0.9);
+	}
+	ul.social-list li .fa-facebook {
+		padding: 7px 10px;
+	}
+
+	/* ==================================
+		4.6// Service List
+	===================================== */
+	.service-post {
+	  margin-bottom: 50px;
+	  overflow: hidden;
+	}
+	.service-post i {
+		float: left;
+		color: #fff;
+		font-size: 26px;
+		width: 48px;
+		height: 48px;
+		background: rgba(255,255,255,0.07);
+		border: 1px solid rgba(255,255,255,0.1);
+		padding: 9px;
+	}
+	.service-post h2 {
+	  font-size: 20px;
+	  font-family: 'Lato', sans-serif;
+	  font-weight: 700;
+	  margin: 0 0 15px;
+	  margin-left: 60px;
+	  text-transform: uppercase;
+	  letter-spacing: 1.8px;
+	  margin-bottom: 11px;
+	}
+	.service-post p {
+	  margin-left: 60px;
+	  margin-bottom: 0;
+	}
+
+
+/* ==================================================================
+	5// Footer
+================================================================== */
+footer {
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+/* ==================================================================
+	6// Theme Colors
+================================================================== */
+a, a:hover, a:focus {
+	color: #c14f66;
+}
+.main-color {
+	color: #c14f66;
+}
+input[type="submit"]:hover, button:hover {
+	background: rgba(255,255,255,0.9);
+	color: #dc2958;
+}
+ul.social-list li i:hover {
+	color: #c14f66;
+}
+/* ===== End Theme Color ===== */

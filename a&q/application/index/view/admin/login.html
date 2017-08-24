@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="__CSS__/index.css" />
+    <title>login</title>
+</head>
+
+<body class="container">
+
+<header class="page-header">
+    <h1>管理员登录</h1>
+</header>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3 login">
+        <form class="form-horizontal" method="post" action="{:url('admin/login')}">
+            <input type="hidden" name="login" value="login">
+            <div class="form-group">
+                <label class="col-sm-offset-1 col-sm-2 control-lable" for="username">帐号</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="username" placeholder="adminname" name="adminname" required>
+                    <span class=""> </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-sm-offset-1 control-lable" for="password">密码</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" id="password" placeholder="password" name="password" required>
+                    <span class=""> </span>
+                </div>
+            </div>
+            <p class="text-center">
+                <button type="submit" class="btn btn-danger" id="btnSubmit">Login</button>
+            </p>
+        </form>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

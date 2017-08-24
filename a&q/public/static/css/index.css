@@ -1,0 +1,56 @@
+html,
+body {
+	color: #505050;
+	line-height: 1.75em;
+	background: white;
+	font-family: "微软雅黑";
+	background-image: url(../img/extra5.png);
+}
+
+body{
+	background: transparent; /* Safari 5.1 - 6.0 */
+    background: -webkit-linear-gradient(#A2B5CD, #96CDCD);
+    background: -o-linear-gradient(#A2B5CD, #96CDCD);
+    background: linear-gradient(#A2B5CD, #96CDCD); /* Opera 11.1 - 12.0 */ /* Firefox 3.6 - 15 */ /* 标准的语法 */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.page-header{
+	box-shadow: 10px 10px 20px white;
+	border: 0;
+}
+
+h1{
+	color: white;
+}
+
+label{
+	margin-top: 5px;
+	margin-right: 15px;
+	color: white;
+}
+
+.login{
+	padding-top: 20px;
+}
+
+.forget{
+	color: white;
+	margin-left: 20px;
+}
+
+.forget:hover{
+	color: #c9302c;
+}
+
+.form-group{
+	margin-top: 30px;
+}
+
+p{
+	margin-top: 30px;
+}
